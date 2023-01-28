@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frank Rdgz</title>
+    <link rel="shortcut icon" href="./images/cool-icon-16.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/apps.css">
+    <link rel="stylesheet" href="./css/toDo.css">
+
+    <meta name="theme-color" content="#2091F9"> 
+    
+</head>
+<body>
+
+    <header class="hero_calc">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h1 class="nav__title">To-Do</h1>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="./index.html" class="nav__links">Home</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./index.html#about__me" class="nav__links">About</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./index.html#contact__me" class="nav__links">Contact</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./apps.html" class="nav__links">Apps</a>
+                </li>
+
+                <img src="./images/close.svg" alt="close" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./images/menu.svg" alt="Menu" class="nav__img">
+            </div>
+        </nav>
+        <section class="hero__container container">
+            <h1></h1>
+            <p class="hero__paragraph">Page is in process, currently Unavaliable!</p>
+            <!--<a href="#" class="cta">Insert a button here</a>-->
+        </section>
+    </header>
+
+    <main>
+        <!--
+        <section>
+        </section> -->
+
+        <section class="toDo">
+            
+            <div class="container_toDo">                            
+                <div class="container__input">                    
+                    <form>
+                        <div class="toDo__input">
+                            <h3>Task</h3>
+                            <input type="text" placeholder="e.g: Doctor Appoitment" id="new-task" class="field__input" name="title">
+                        </div>
+                        <div class="toDo__input">
+                            <h3>Task Description</h3>
+                            <input type="text" placeholder="e.g: Bring Insurance" id="new-task-description" class="field__input" name="description">
+                        </div>
+                        <div class="toDo__input">
+                            <h3>Due date?</h3>
+                            <input type="date" placeholder="When is it due?" id="new-task-date" class="field__input" name="date">
+                        </div>
+                        <div class="add__toDo">
+                            <button class="cta cta--add" type="submit">Add task</button>
+                        </div>
+                    </form>
+                </div>
+            </div>            
+        </section>
+
+        <section class="toDo__listing">
+            <ul id="task-list">
+                <!-- tasks will be added here dynamically -->
+            </ul>
+              
+        </section>
+
+    </main>
+
+        
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Applications Page</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="./index.html" class="nav__links">Home</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./index.html#about__me" class="nav__links">About</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./index.html#contact__me" class="nav__links">Contact</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./apps.html" class="nav__links">Apps</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="https://wwww.facebook.com/frank.rodrgz" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
+                <a href="https://instagram.com/frank_rdgz_" class="footer__icons"><img src="./images/instagram.svg" class="footer__img"></a>
+                <a href="https://www.linkedin.com/in/frank-rodriguez-667979237/" class="footer__icons"><img src="./images/linkedin.svg" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Copyright &copy; Frank Rodriguez</h3>
+        </section>
+    </footer>
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/toDo.js"></script>
+
+</body>
+</html>
