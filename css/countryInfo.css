@@ -6,13 +6,38 @@
 }
 
 .countryInfo{
-    background-image: url(./images/countryInfo.jpg);
-    background-color: #3d64e6;
+    background-image: url('../images/countryInfo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
 }
+
+.countryInfo{
+    width: 100%;
+    /*Change the height of the top image*/
+    height: 10vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+}
+
+.countryInfo::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../images/countryInfo.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    z-index: -1;
+}
+
 .container__map{
     background-color: #fff;
     padding: 3em 2.5em;
