@@ -1,0 +1,10 @@
+.flip{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+#coin {
+    transition: transform .5s;
+    width: 200px;
+    height: 200px;
+}

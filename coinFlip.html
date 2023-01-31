@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/apps.css">
     <link rel="stylesheet" href="./css/toDo.css">
+    <link rel="stylesheet" href="./css/flipCoin.css">
 
     <meta name="theme-color" content="#2091F9"> 
     
@@ -19,7 +20,7 @@
     <header class="hero_calc">
         <nav class="nav container">
             <div class="nav__logo">
-                <h1 class="nav__title">To-Do</h1>
+                <h1 class="nav__title">Heads or Tails</h1>
             </div>
 
             <ul class="nav__link nav__link--menu">
@@ -45,7 +46,7 @@
         </nav>
         <section class="hero__container container">
             <h1></h1>
-            <p class="hero__paragraph">Page is in process, currently Unavaliable!</p>
+            <p class="hero__paragraph">Flip the coin and get your 50/50 chance</p>
             <!--<a href="#" class="cta">Insert a button here</a>-->
         </section>
     </header>
@@ -55,14 +56,11 @@
         <section>
         </section> -->
 
-        <section class="toDo">
-            
-            <div class="container_toDo">                            
-                <div class="container__input">                    
-                    <img id="image" src="./images/heads.jpeg">
-                    <button onclick="flipImage()">Flip</button>
-                </div>
-            </div>            
+        <section class="flip">
+            <img id="coin" src="./images/heads.jpeg" alt="Coin">
+            <br>
+            <button onclick="startFlip()">Flip</button>
+            <button onclick="stopFlip()">Stop</button>
         </section>
 
     </main>
