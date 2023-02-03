@@ -3,6 +3,10 @@ let countryIn = document.getElementById("country__input");
 
 searchBtn.addEventListener("click", ()=> {
     let countryName = countryIn.value;
+    if(countryName.endsWith(" ") || countryName.endsWith(".")){
+        countryName =  countryName.slice(0, -1);
+    }
+    console.log(countryName);
     let finalURL = `https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
     fetch(finalURL).then((response) => response.json()).then((data) => {
         //console.log(Object.values(data[0].languages).toString.split(",").join(", "));
