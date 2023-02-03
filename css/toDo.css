@@ -16,15 +16,16 @@
     display: grid;
     align-items: center;
     margin: 10px;
-    border-radius: 3%;
+    border-radius: 10px;
 }
 
 .field__input{
     width: 100%;
-    border-color: #333;
+    border-color: rgb(89, 87, 87);
     background-color:#fff;
-    box-shadow: 0 0 5px #333;
+    box-shadow: 0 0 2px #333;
     padding: 10px;
+    border-radius: 10px;
 }
 
 .toDo__input{

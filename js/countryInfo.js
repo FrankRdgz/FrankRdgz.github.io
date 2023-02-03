@@ -6,7 +6,6 @@ searchBtn.addEventListener("click", ()=> {
     if(countryName.endsWith(" ") || countryName.endsWith(".")){
         countryName =  countryName.slice(0, -1);
     }
-    console.log(countryName);
     let finalURL = `https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
     fetch(finalURL).then((response) => response.json()).then((data) => {
         //console.log(Object.values(data[0].languages).toString.split(",").join(", "));
