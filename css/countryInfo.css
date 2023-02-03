@@ -132,7 +132,7 @@
     
     .search__wrapper{
         display: grid;
-        gap: 1.25em;
+        gap: 1em;
     }
     
     .icon{
@@ -161,7 +161,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        padding: 1px;
+        padding: 20px;
     }
     
     .container__map .flag__img{
