@@ -1,69 +1,147 @@
+
 .toDo{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 1px;
 }
 
-.container_toDo{
+.container__toDo{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.container__input{
-    background-color: #e5e5f7;
-    padding: 0;
+#main__content {
     display: grid;
     align-items: center;
-    margin: 10px;
-    border-radius: 10px;
+    padding: 10px;  
 }
 
-.field__input{
-    width: 100%;
-    border-color: rgb(89, 87, 87);
-    background-color:#fff;
-    box-shadow: 0 0 2px #333;
-    padding: 10px;
-    border-radius: 10px;
-}
+li {
+    list-style-type: none;
+}  
 
-.toDo__input{
-    font-size: 20px;
-    width: 99%;
-    padding: 10px;
-    border: none;
-}
-
-.toDo__listing{
-    margin: 100px;
-}
-
-.add__toDo{
+.stats{    
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 30px;
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
 
-.warning__text{
-   background-color: #fff;
-}
-
-#task-list{
-    list-style-type: square;
-    font-size: 20px;
-}
-ul{
-    border: #5a6b74;
-}
-
-#deleteBtn:hover{
-    background-color:red;
+.stats span{
     color: #fff;
+    background-color: #174d79;
+    border-radius: 3px;
+    padding: 5px;
 }
 
-#deleteBtn{
-    background-color:rgb(243, 200, 200);
-    color: black;
+#remaining__tasks{
+    background-color: rgb(91, 136, 227);
 }
 
+#completed__tasks{
+    background-color: rgb(91, 136, 227);
+}
+
+#total__tasks{
+    background-color: rgb(91, 136, 227);
+}
+
+#todo__form button{
+    background-color: rgb(245, 202, 103);
+}
+
+.todos{
+    margin-bottom: 4rem;
+}
+
+.todos li{
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todos li div{
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.todos li.complete{
+    background-color: rgb(101, 181, 224, 0.5);    
+    text-decoration: line-through;
+    color: rgb(72, 72, 72);
+}
+
+input[type='checkbox']{
+    appearance: none;
+    background-color: transparent;
+    margin: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    border:2px solid black;
+    border-radius: 100%;
+    display: grid;
+    place-content: center;
+    transition: all .2s ease-in-out;
+}
+
+input[type='checkbox']::before{   
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' style='fill: #fff ;transform: ;msFilter:;'%3E%3Cpath d='m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z'%3E%3C/path%3E%3C/svg%3E");
+    transform: scale(0);
+    transition: all .2s ease-in-out;
+}
+
+input[type='checkbox']:checked{
+    background-color: rgb(72, 72, 72);
+    border-color: rgb(72, 72, 72);
+}
+
+input[type='checkbox']:checked::before{
+    transform: scale(1);
+}
+
+.todos li button{
+    border: 0;
+    padding: .25rem;
+    display: grid;
+    place-content: center;
+    background-color: transparent;
+} 
+
+.todos li button svg{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.todos li button svg path{
+    transition: all .2s ease-in-out;
+}
+
+.todos li button:hover svg path {
+    stroke: rgb(0, 0, 0);
+}
+
+.todos li button:active svg{
+    transform: scale(.8);
+}
+
+.todos li span{
+    padding: 2px;
+    border-radius: 3px;
+    transition: all .2s ease-in-out;;
+}
+
+.todos li span:focus{
+    background-color: cornsilk;
+    outline: none;
+}
+
+.tods li span[contenteditable]:hover{
+    background-color: cornsilk;
+}

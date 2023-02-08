@@ -43,17 +43,47 @@
                 <img src="./images/menu.svg" alt="Menu" class="nav__img">
             </div>
         </nav>
-        <section class="hero__container container">
-            <h1></h1>
-            <p class="hero__paragraph">Page is in process, currently Unavaliable!</p>
-            <!--<a href="#" class="cta">Insert a button here</a>-->
+        <section class="container__toDo ">
+            <section id="main-header">
+                <div class="toDo__container">
+                    <h1>Today</h1>
+
+                    <form action="" id="todo__form">
+                        <input type="text" name="task__name" placeholder="e.g. Doc Appointment" autofocus>
+                        <button type="submit">Add Task</button>
+                    </form>
+                </div>
+            </section>
         </section>
     </header>
 
+    <section>
+        <div class="toDo__container" id="main__content">
+            <ul class="stats">
+                <li>
+                    <span>Remaining</span>
+                    <span id="remaining__tasks">0</span>
+                </li>
+                <li>
+                    <span>Completed</span>
+                    <span class= "count" id="completed__tasks">0</span>
+                </li>
+                <li>
+                    <span>Total</span>
+                    <span class="count" id="total__tasks">0</span>
+                </li>
+            </ul>
+
+            <ul class="todos">
+                <li class="complete">
+                </li>
+            </ul>
+
+        </div>
+    </section>
     <main>
+
         <!--
-        <section>
-        </section> -->
 
         <section class="toDo">
             
@@ -82,10 +112,13 @@
 
         <section class="toDo__listing">
             <ul id="task-list">
-                <!-- tasks will be added here dynamically -->
+
             </ul>
               
         </section>
+    -->
+
+
 
     </main>
 
@@ -128,3 +161,4 @@
 
 </body>
 </html>
+
