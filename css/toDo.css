@@ -161,6 +161,14 @@ input[type='checkbox']:checked::before{
 }
 
 @media (max-width: 767px){
+
+    .hero__SecPages__todo{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 20px;
+    }
+
     .toDo{
         font-family: Arial, Helvetica, sans-serif;
         margin: 0;

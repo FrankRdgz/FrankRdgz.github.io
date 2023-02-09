@@ -125,8 +125,8 @@ function createTask(task){
 }
 
 function countTasks(){
-    const completedTasksArray = tasks.filter((task) => task.isCompleted === true)
 
+    const completedTasksArray = tasks.filter((task) => task.isCompleted === true)
     totalTasks.textContent = tasks.length
     completedTasks.textContent = completedTasksArray.length
     remainingTasks.textContent = tasks.length - completedTasksArray.length
