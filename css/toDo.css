@@ -1,8 +1,17 @@
 
+.hero__SecPages__todo{
+    background-color: #1D293F;
+    color: #fff;
+}
+
 .toDo{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 1px;
+}
+
+.toDo__container{
+    background-color: rgb(219, 219, 219);
 }
 
 .container__toDo{
@@ -50,6 +59,11 @@ li {
 
 #todo__form button{
     background-color: rgb(245, 202, 103);
+}
+
+#todo__form input{
+    padding: 14px 20px;
+    border-radius: 4px;
 }
 
 .todos{
@@ -144,4 +158,42 @@ input[type='checkbox']:checked::before{
 
 .tods li span[contenteditable]:hover{
     background-color: cornsilk;
+}
+
+@media (max-width: 767px){
+    .toDo{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 1px;
+    }
+
+    .container__toDo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #main__content {
+        display: grid;
+        align-items: center;
+        padding: 10px;  
+    }
+
+    li {
+        list-style-type: none;
+    }  
+
+    .stats{    
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+
+    .stats span{
+        color: #fff;
+        background-color: #174d79;
+        border-radius: 3px;
+    }
 }

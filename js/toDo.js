@@ -75,7 +75,7 @@ todoForm.addEventListener('submit', (e) => {
     const task = {
         id: new Date().getTime(),
         name: inputValue,
-        isCompleted: false
+        isCompleted : false
     }
 
     tasks.push(task)
@@ -98,7 +98,6 @@ todoList.addEventListener('input', (e) => {
     const taskId = e.target.closest('li').id
     updateTask(taskId, e.target)
 })
-
 
 function createTask(task){
     const taskEl = document.createElement('li')
@@ -140,11 +139,10 @@ function removeTask(taskId){
     document.getElementById(taskId).remove()
     countTasks()
 }
-
 function updateTask(taskId, el){
     const task = tasks.find((task) => task.id === parseInt(taskId))
 
-    if(el.hasAttribute('conteteditable')){
+    if(el.hasAttribute('contenteditable')){
         task.name = el.textContent
     }
     else{
