@@ -105,12 +105,13 @@ function createTask(task){
 
     if(task.isCompleted){
         taskEl.classList.add('complete')
+        //console.log(task)
     }
 
     const taskElMarkup = `
     <div>
-        <input type="checkbox" name="tasks" id="${task.id}" ${task.isCompleted ? 'checked' : ''}> 
-        <span ${!task.isCompleted ? 'contenteditable' : ''}>${task.name}</span>
+        <input type='checkbox' name='tasks' id='${task.id}' ${task.isCompleted ? 'checked' : ''}> 
+        <span class="test" ${!task.isCompleted ? 'contenteditable' : ''}>${task.name} </span>
     </div>
 
     <button title="Remove the '${task.name}' task" class="remove__task">
@@ -125,7 +126,6 @@ function createTask(task){
 }
 
 function countTasks(){
-
     const completedTasksArray = tasks.filter((task) => task.isCompleted === true)
     totalTasks.textContent = tasks.length
     completedTasks.textContent = completedTasksArray.length
@@ -142,15 +142,19 @@ function removeTask(taskId){
 function updateTask(taskId, el){
     const task = tasks.find((task) => task.id === parseInt(taskId))
 
+    //console.log(task)
+
     if(el.hasAttribute('contenteditable')){
         task.name = el.textContent
     }
     else{
-        const span = el.nextElementSibiling
+        const span = el//.nextElementSibiling
         const parent = el.closest('li')
-
+        
         task.isCompleted = !task.isCompleted
 
+        //console.log(task.isCompleted + " completed?")
+        //console.log(el.nextElementSibiling)
         if(task.isCompleted){
             span.removeAttribute('contenteditable')
             parent.classList.add('complete')
@@ -158,9 +162,9 @@ function updateTask(taskId, el){
         else{
             span.setAttribute('contenteditable', 'true')
             parent.classList.remove('complete')
+            location.reload();
         }
     }
-
     localStorage.setItem('tasks', JSON.stringify(tasks))
     countTasks()
 }
