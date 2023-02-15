@@ -1,0 +1,75 @@
+
+/*Tip Calc*/
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.row label {
+    width: 150px;
+    text-align: right;
+    margin-right: 16px;
+}
+
+input[type=number] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+button{
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+#output_tip {
+    margin: 16px 0;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+
+  #output2 {
+    margin: 16px 0;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+
+  #output_dif {
+    margin: 16px 0;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .col{
+    width: 45%;
+    float: left;
+    margin: 8px;
+  }
+
+.func__table{
+    padding-top:0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.calc__tip{
+    display: grid;
+    gap: 0em;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    color: var(--color-items);
+}

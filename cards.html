@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+
+    <link rel="stylesheet" href="./css/cards.css">
+
+</head>
+<body>
+    <header>
+        <nav class="nav container">
+            <h1 class="nav__title">Cards Shuffle</h1>
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="./index.html" class="nav__links">Home</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./index.html#about__me" class="nav__links">About</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./index.html#contact__me" class="nav__links">Contact</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./apps.html" class="nav__links">Apps</a>
+                </li>
+
+                <img src="./images/close.svg" alt="close" class="nav__close">
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card__input">
+            <form action="" id="card__input">
+                <h3>Name the card</h3>
+                <input type="text" class="input__field" id="input__face">
+                <div class="add__card"><button  type="submit">Add Card</button></div>
+            </form>
+        </section>
+        <ul class="cards__list">
+        </ul>
+        <section class="card__shuffle">
+            <button>Shuffle Cards</button>
+        </section>
+    </main>
+    <script src="./js/cards.js"></script>
+    
+</body>
+</html>

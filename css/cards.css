@@ -1,0 +1,161 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav{
+    --padding-container:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+.nav__title{
+    font-weight: 300;
+    color: #fff;
+    padding-left: 20px;
+}
+
+.nav__link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.nav__items{
+    list-style: none;
+    padding-right: 20px;
+}
+
+.nav__links{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__links a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__menu{
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.nav__img{
+    display: block;
+    width: 30px;
+}
+
+.nav__close{
+    display: var(--show, none);
+}
+
+#card__input{
+    background-color:aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input__field{
+    border-radius: 7px;
+    height: 20px;
+}
+
+.input__field::placeholder{
+    opacity: .5;
+}
+
+h3{
+    margin: 10px;
+}
+
+.add__card{
+    padding: 10px;
+}
+
+.add__card button{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cards__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards{
+position: relative;
+background-color: aliceblue;
+margin: 10px;
+min-height: 150px;
+min-width: 100px;
+max-width: 150px;
+max-height: 200px;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+border: 2px solid #0088ff;
+background-color: #e5e5f7;
+background: linear-gradient(135deg, hsla(237, 92%, 62%, 0.2) 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, rgb(68, 76, 247, .3) 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, rgba(68, 76, 247, 0.2) 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, rgb(68, 76, 247, .3) 25%, #e5e5f7 25%) 0px 0/ 20px 20px;
+overflow: auto;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease;
+}
+  
+.card-back {
+    transform: rotateY(180deg);
+}
+  
+.card-flipped .card-front {
+    transform: rotateY(180deg);
+}
+  
+.card-flipped .card-back {
+    transform: rotateY(0deg);
+}
+
+.cards h3{
+    opacity: 1;
+    text-align: center;
+}
+
+.card__face{
+    text-align: center;
+}
+
+.card__back{
+    text-align: center;
+    display: none;
+}
+
+.card__shuffle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
