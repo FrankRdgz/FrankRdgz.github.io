@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Card Game</title>
+	<link rel="stylesheet" type="text/css" href="css/cards2.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav container">
+            <h1 class="nav__title">Cards Shuffle</h1>
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="./index.html" class="nav__links">Home</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./index.html#about__me" class="nav__links">About</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./index.html#contact__me" class="nav__links">Contact</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./apps.html" class="nav__links">Apps</a>
+                </li>
+
+                <img src="./images/close.svg" alt="close" class="nav__close">
+            </ul>
+            <div class="nav__menu">
+                <img src="./images/menu.svg" alt="Menu" class="nav__img">
+            </div>
+        </nav>
+    </header>
+
+    <section class="card__input" id="cardName">
+        <form action="" id="card__input">
+            <h3>Name the card</h3>
+            <input type="text" class="input__field" id="input__face">
+            <div class="add__card"><button  type="submit"onclick="addCard()">Add Card</button></div>
+        </form>
+    </section>
+    <div id="cardContainer"></div>
+
+	<button onclick="shuffleCards()">Shuffle Cards</button>
+	<script src="js/cards2.js"></script>
+</body>
+</html>

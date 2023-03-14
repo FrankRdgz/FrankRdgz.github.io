@@ -1,0 +1,148 @@
+
+.nav{
+    --padding-container:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+.nav__title{
+    font-weight: 300;
+    color: #fff;
+    padding-left: 20px;
+}
+
+.nav__link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.nav__items{
+    list-style: none;
+    padding-right: 20px;
+
+}
+
+.nav__links{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__links a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__menu{
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.nav__img{
+    display: block;
+    width: 30px;
+}
+
+.nav__close{
+    display: var(--show, none);
+}
+
+.input__field{
+    border-radius: 7px;
+    height: 20px;
+}
+
+.input__field::placeholder{
+    opacity: .5;
+}
+
+.add__card{
+    padding: 10px;
+}
+
+button{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+h1 {
+    margin-top: 50px;
+}
+label, input, button {
+    margin: 10px;
+}
+#cardContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    width: 100px;
+    height: 150px;
+    margin: 10px;
+    background-color: rgb(68, 76, 247, .3);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+.card.hidden {
+    background: linear-gradient(135deg, hsla(237, 92%, 62%, 0.2) 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, rgb(68, 76, 247, .3) 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, rgba(68, 76, 247, 0.2) 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, rgb(68, 76, 247, .3) 25%, #e5e5f7 25%) 0px 0/ 20px 20px;
+    transform: rotateY(180deg);
+}
+
+.card.flip {
+    transform: rotateY(180deg);
+}
+
+.nav__menu{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+  
+
+
+@media (max-width: 768px) {
+    .nav__items {
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        color: #fff;
+        background-color: #333;
+        padding: 10px;
+    }
+  
+    .nav__menu {
+      display: block;
+    }
+  
+    .nav__menu.active {
+      transform: rotate(90deg);
+    }
+  
+    .nav__menu:hover {
+      color: lightgray;
+    }
+  
+    .menu li {
+      margin: 10px 0;
+    }
+  }
