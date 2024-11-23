@@ -82,6 +82,9 @@
     width: 90%;
     cursor: pointer;
 }
+hr.solid {
+    border-top: 3px solid #bbb;
+}
 
 .img__link__coin{
     border-radius: 50px;
